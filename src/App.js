@@ -290,7 +290,7 @@ function App() {
   };
 
   const connectSocket = (username) => {
-    const newSocket = io('http://localhost:5000');
+    const newSocket = io('https://chatappserver-gd1u.onrender.com');
     setSocket(newSocket);
 
     newSocket.emit('user_login', {
